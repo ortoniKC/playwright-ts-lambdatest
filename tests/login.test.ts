@@ -1,4 +1,4 @@
-import { chromium, test } from "@playwright/test"
+import { chromium, test, expect } from "@playwright/test"
 
 test("Login test demo", async () => {
 
@@ -27,3 +27,4 @@ test("Login test demo", async () => {
     await newPage.waitForTimeout(5000);
 
 })
+// import { test, expect } from '@playwright/test';
