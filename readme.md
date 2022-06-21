@@ -18,4 +18,4 @@ Please follow in a sequence:
 
 - [How To Setup Playwright Test Automation Framework | Playwright Tutorial🎭| Part I | LambdaTest](https://youtu.be/06HIhFcpBDo)
 - [How To Use Functions And Selectors | Playwright With Typescript Tutorial 🎭| Part II | LambdaTest](https://youtu.be/UWeXnulWfJs)
-- Playwright-specific features like auto-wait mechanism, report generation, recording video, screenshots on failure & execution on failure.
+- [Playwright Testing Features | Playwright With TypeScript Tutorial🎭| Part III | LambdaTest](https://youtu.be/1INdYpaXqLE)
