@@ -1,0 +1,110 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "",
+        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/dropdown.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.22.2",
+    "workers": 4,
+    "webServer": null,
+    "_globalOutputDir": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright",
+    "_configDir": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright",
+    "_testGroupsCount": 1
+  },
+  "suites": [
+    {
+      "title": "tests\\dropdown.test.ts",
+      "file": "tests/dropdown.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "Bootstrap dropdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 13616,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-dropdown-Bootstrap-dropdown\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-dropdown-Bootstrap-dropdown\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "tests/dropdown.test.ts",
+          "line": 26,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
