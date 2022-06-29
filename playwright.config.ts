@@ -1,13 +1,13 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["tests/dropdown.test.ts"],
+    testMatch: ["tests/windows.test.ts"],
     use: {
         headless: false,
         screenshot: "on",
         video: "on",
         launchOptions: {
-            slowMo: 1000
+            // slowMo: 1000
         }
 
     },
