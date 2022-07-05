@@ -19,7 +19,7 @@
         "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/dropdown.test.ts"
+          "tests/uploadDownload.test.ts"
         ],
         "timeout": 30000
       }
@@ -59,13 +59,13 @@
   },
   "suites": [
     {
-      "title": "tests\\dropdown.test.ts",
-      "file": "tests/dropdown.test.ts",
+      "title": "tests\\uploadDownload.test.ts",
+      "file": "tests/uploadDownload.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Bootstrap dropdown",
+          "title": "Upload files",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,20 +78,24 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 13616,
-                  "stdout": [],
+                  "duration": 8626,
+                  "stdout": [
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-dropdown-Bootstrap-dropdown\\video.webm"
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-uploadDownload-Upload-files\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-dropdown-Bootstrap-dropdown\\test-finished-1.png"
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-uploadDownload-Upload-files\\test-finished-1.png"
                     }
                   ]
                 }
@@ -99,8 +103,8 @@
               "status": "expected"
             }
           ],
-          "file": "tests/dropdown.test.ts",
-          "line": 26,
+          "file": "tests/uploadDownload.test.ts",
+          "line": 20,
           "column": 6
         }
       ]
