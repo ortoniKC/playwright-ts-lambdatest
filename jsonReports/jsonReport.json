@@ -19,7 +19,7 @@
         "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/uploadDownload.test.ts"
+          "pomtest/addToCartUsingFixture.test.ts"
         ],
         "timeout": 30000
       }
@@ -59,14 +59,14 @@
   },
   "suites": [
     {
-      "title": "tests\\uploadDownload.test.ts",
-      "file": "tests/uploadDownload.test.ts",
+      "title": "pomtest\\addToCartUsingFixture.test.ts",
+      "file": "pomtest/addToCartUsingFixture.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Upload files",
-          "ok": true,
+          "title": "Register test_01",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -77,25 +77,117 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 8626,
-                  "stdout": [
-                    {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    }
-                  ],
+                  "status": "failed",
+                  "duration": 7346,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"Register Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"Register Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:16:18"
+                  },
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-uploadDownload-Upload-files\\video.webm"
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Register-test-01\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\tests-uploadDownload-Upload-files\\test-finished-1.png"
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Register-test-01\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
+                    "column": 18,
+                    "line": 16
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "file": "pomtest/addToCartUsingFixture.test.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "Login test_02",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 6929,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"My Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"My Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:26:18"
+                  },
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Login-test-02\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Login-test-02\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
+                    "column": 18,
+                    "line": 26
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "file": "pomtest/addToCartUsingFixture.test.ts",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "Add to cart test_03",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 11020,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Add-to-cart-test-03\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Add-to-cart-test-03\\test-finished-1.png"
                     }
                   ]
                 }
@@ -103,9 +195,9 @@
               "status": "expected"
             }
           ],
-          "file": "tests/uploadDownload.test.ts",
-          "line": 20,
-          "column": 6
+          "file": "pomtest/addToCartUsingFixture.test.ts",
+          "line": 30,
+          "column": 1
         }
       ]
     }
