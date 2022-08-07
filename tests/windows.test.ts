@@ -1,3 +1,4 @@
+let facebookPage: Page;
 import { expect, Page, test } from "@playwright/test";
 
 test("Interact with multiple tabs", async ({ page }) => {
@@ -20,7 +21,6 @@ test("Interact with multiple tabs", async ({ page }) => {
         console.log(tab.url());
     })
 
-    let facebookPage: Page;
     for (let index = 0; index < pages.length; index++) {
         const url = pages[index].url()
         if (url == "https://www.facebook.com/lambdatest/") {

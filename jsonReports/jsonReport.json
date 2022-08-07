@@ -15,13 +15,25 @@
         "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "name": "",
+        "name": "chrome:latest:MacOS Catalina@lambdatest",
         "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
         "testIgnore": [],
         "testMatch": [
           "pomtest/addToCartUsingFixture.test.ts"
         ],
-        "timeout": 30000
+        "timeout": 300000
+      },
+      {
+        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chrome",
+        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtest/addToCartUsingFixture.test.ts"
+        ],
+        "timeout": 300000
       }
     ],
     "reporter": [
@@ -63,141 +75,133 @@
       "file": "pomtest/addToCartUsingFixture.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Register test_01",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 7346,
-                  "error": {
-                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"Register Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"Register Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Register Account\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:16:18"
-                  },
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Register-test-01\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Register-test-01\\test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
-                    "column": 18,
-                    "line": 16
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
+          "title": "Page object test demo",
           "file": "pomtest/addToCartUsingFixture.test.ts",
           "line": 5,
-          "column": 1
-        },
-        {
-          "title": "Login test_02",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
+              "title": "Register test_01",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 6929,
-                  "error": {
-                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"My Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"koushik\"\u001b[39m\nReceived string: \u001b[31m\"My Account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"My Account\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:26:18"
-                  },
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chrome:latest:MacOS Catalina@lambdatest",
+                  "results": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Login-test-02\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Login-test-02\\test-failed-1.png"
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 11642,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Your Account Has Been Created!\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Your Account Has Been Created!\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:18:22"
+                      },
+                      "stdout": [
+                        {
+                          "text": "Before closing: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
+                        "column": 22,
+                        "line": 18
+                      }
                     }
                   ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
-                    "column": 18,
-                    "line": 26
-                  }
+                  "status": "unexpected"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "file": "pomtest/addToCartUsingFixture.test.ts",
-          "line": 20,
-          "column": 1
-        },
-        {
-          "title": "Add to cart test_03",
-          "ok": true,
-          "tags": [],
-          "tests": [
+              "file": "pomtest/addToCartUsingFixture.test.ts",
+              "line": 7,
+              "column": 5
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
+              "title": "Login test_02",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 11020,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chrome:latest:MacOS Catalina@lambdatest",
+                  "results": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Add-to-cart-test-03\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Add-to-cart-test-03\\test-finished-1.png"
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 8440,
+                      "error": {
+                        "message": "page.evaluate: Target closed",
+                        "stack": "page.evaluate: Target closed\n    at Object.page [as fn] (C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\base\\pomFixture.ts:95:26)"
+                      },
+                      "stdout": [
+                        {
+                          "text": "Before closing: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
                     }
-                  ]
+                  ],
+                  "status": "unexpected"
                 }
               ],
-              "status": "expected"
+              "file": "pomtest/addToCartUsingFixture.test.ts",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "Add to cart test_03",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chrome:latest:MacOS Catalina@lambdatest",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 14832,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[.='View Cart ']\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[.='View Cart ']\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:37:31"
+                      },
+                      "stdout": [
+                        {
+                          "text": "Before closing: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
+                        "column": 31,
+                        "line": 37
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "file": "pomtest/addToCartUsingFixture.test.ts",
+              "line": 30,
+              "column": 5
             }
-          ],
-          "file": "pomtest/addToCartUsingFixture.test.ts",
-          "line": 30,
-          "column": 1
+          ]
         }
       ]
     }
