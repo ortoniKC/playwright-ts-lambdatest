@@ -27,7 +27,31 @@
         "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
+        "name": "chrome:latest:Windows 10@lambdatest",
+        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtest/addToCartUsingFixture.test.ts"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
         "name": "chrome",
+        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtest/addToCartUsingFixture.test.ts"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "firefox",
         "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
         "testIgnore": [],
         "testMatch": [
@@ -80,125 +104,124 @@
         {
           "title": "Page object test demo",
           "file": "pomtest/addToCartUsingFixture.test.ts",
-          "line": 5,
+          "line": 8,
           "column": 6,
           "specs": [
             {
               "title": "Register test_01",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 300000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectName": "chrome:latest:MacOS Catalina@lambdatest",
+                  "projectName": "chrome",
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "failed",
-                      "duration": 11642,
-                      "error": {
-                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Your Account Has Been Created!\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Your Account Has Been Created!\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:18:22"
-                      },
-                      "stdout": [
-                        {
-                          "text": "Before closing: passed\n"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 7774,
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
-                        "column": 22,
-                        "line": 18
-                      }
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Register-test-01-chrome\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 7,
+              "line": 10,
               "column": 5
             },
             {
               "title": "Login test_02",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 300000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectName": "chrome:latest:MacOS Catalina@lambdatest",
+                  "projectName": "chrome",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "status": "failed",
-                      "duration": 8440,
-                      "error": {
-                        "message": "page.evaluate: Target closed",
-                        "stack": "page.evaluate: Target closed\n    at Object.page [as fn] (C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\base\\pomFixture.ts:95:26)"
-                      },
-                      "stdout": [
-                        {
-                          "text": "Before closing: passed\n"
-                        }
-                      ],
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 9160,
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Login-test-02-chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Login-test-02-chrome\\test-finished-2.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 22,
+              "line": 23,
               "column": 5
             },
             {
               "title": "Add to cart test_03",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 300000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectName": "chrome:latest:MacOS Catalina@lambdatest",
+                  "projectName": "chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "status": "failed",
-                      "duration": 14832,
-                      "error": {
-                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[.='View Cart ']\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[.='View Cart ']\"\u001b[22m\n\n    at C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts:37:31"
-                      },
-                      "stdout": [
-                        {
-                          "text": "Before closing: passed\n"
-                        }
-                      ],
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 13035,
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\pomtest\\addToCartUsingFixture.test.ts",
-                        "column": 31,
-                        "line": 37
-                      }
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-3.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 30,
+              "line": 31,
               "column": 5
             }
           ]

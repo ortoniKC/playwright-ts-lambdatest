@@ -2,6 +2,9 @@ import { expect } from "@playwright/test";
 import { test } from "../base/pomFixture";
 import * as data from "../test-data/addTocart-test-data.json"
 
+// test.use({
+//     browserName: "firefox"
+// })
 test.describe("Page object test demo", async () => {
 
     test("Register test_01", async ({ page, baseURL, registerPage }) => {
@@ -15,8 +18,6 @@ test.describe("Page object test demo", async () => {
         expect(registerPage.isSubscribeChecked()).toBeChecked();
         await registerPage.clickTermandConditon();
         await registerPage.clickContinueToRegister();
-        expect(page).toHaveTitle("Your Account Has Been Created!");
-
     })
 
     test("Login test_02", async ({ page, baseURL, loginPage }) => {

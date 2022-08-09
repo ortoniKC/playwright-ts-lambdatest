@@ -1,26 +1,30 @@
 import { chromium, test, expect } from "@playwright/test"
-const capabilities = {
-    'browserName': 'Chrome', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
-    'browserVersion': 'latest',
-    'LT:Options': {
-        'platform': 'Windows 10',
-        'build': 'Playwright Sample Build',
-        'name': 'Playwright Sample Test',
-        'user': 'koushik350',
-        'accessKey': 'GhnFCYUK4IWo9j4f38tr2RoS3rwmJxaR0AozKsHvRjigNBDzlJ',
-        'network': true,
-        'video': true,
-        'console': true
-    }
-}
 
+
+// LambdaTest capabilities
+const capabilities = {
+    browserName: "Chrome", // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
+    browserVersion: "latest",
+    "LT:Options": {
+        platform: "Windows 10",
+        build: "Playwright Test Build",
+        name: "Playwright Test",
+        user: 'koushik350',
+        accessKey: 'GhnFCYUK4IWo9j4f38tr2RoS3rwmJxaR0AozKsHvRjigNBDzlJ',
+        network: true,
+        video: true,
+        console: true,
+        tunnel: false, // Add tunnel configuration if testing locally hosted webpage
+        tunnelName: "", // Optional
+        geoLocation: '', // country code can be fetched from https://www.lambdatest.com/capabilities-generator/
+    },
+};
 test("Login test demo", async () => {
 
-    const browser = await chromium.connect(
-        `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
-    );
-    const page = await browser.newPage();
-    // const page = await context.newPage();
+    const browser = await chromium.connect(`wss://cdp.lambdatest.com/playwright?capabilities=
+    ${encodeURIComponent(JSON.stringify(capabilities))}`);
+    const context = await browser.newContext();
+    const page = await context.newPage();
 
     await page.goto("https://ecommerce-playground.lambdatest.io/")
     await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]")
@@ -30,14 +34,17 @@ test("Login test demo", async () => {
     await page.fill("input[name='password']", "Pass123$")
     await page.click("input[value='Login']");
 
-    await page.waitForTimeout(5000);
+    await page.close();
+    await context.close();
+    await browser.close();
 
-    const newContext = await browser.newContext()
+    // await page.waitForTimeout(5000);
 
-    const newPage = await newContext.newPage();
-    await newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+    // const newContext = await browser.newContext()
 
-    await newPage.waitForTimeout(5000);
+    // const newPage = await newContext.newPage();
+    // await newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+
+    // await newPage.waitForTimeout(5000);
 
 })
-// import { test, expect } from '@playwright/test';

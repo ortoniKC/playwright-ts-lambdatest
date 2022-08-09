@@ -6,12 +6,14 @@ import SpecialHotPage from "../pages/specialHotPage"
 
 const email = "Koushik03@mailinator.com";
 const password = "Koushik@123";
-test.describe("Page object test demo", async () => { 
+test.describe("Page object test demo", async () => {
 
     // test.use({
     //     baseURL:"somsomos"
     // })
-    test("Register test_01", async ({ page, baseURL }) => {
+    test("Register test_01", async ({ page, baseURL }, testInfo) => {
+        console.log('TITLE: ' + testInfo.title);
+
         const register = new RegisterPage(page);
         await page.goto(`${baseURL}route=account/register`);
         await register.enterFirstName("Koushik");
@@ -23,9 +25,11 @@ test.describe("Page object test demo", async () => {
         expect(register.isSubscribeChecked()).toBeChecked();
         await register.clickTermandConditon();
         await register.clickContinueToRegister();
-    
+        console.log('STATUS: ' + testInfo.status);
+
+
     })
-    
+
     test("Login test_02", async ({ page, baseURL }) => {
         const login = new LoginPage(page);
         await page.goto(`${baseURL}route=account/login`)
@@ -34,8 +38,8 @@ test.describe("Page object test demo", async () => {
         await login.clickLoginBtn();
         expect(await page.title()).toBe("My Account");
     })
-    
-    test("Add to cart test_03", async ({ page, baseURL}) => {
+
+    test("Add to cart test_03", async ({ page, baseURL }) => {
         const login = new LoginPage(page);
         const homePage = new HomePage(page);
         const special = new SpecialHotPage(page);
